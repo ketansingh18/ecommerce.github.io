@@ -1,0 +1,1595 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav-bar
+{
+    width: 100%;
+    height: 100px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSLH_zEvHRym06lVlEnEZdRcqowW99GbD2yw&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.logo
+{
+    line-height: 90px;
+    font-size: 50px;
+    margin-left: 35px;
+}
+.logo a{
+    text-decoration: none;
+    list-style: none; 
+    font-weight: bold;
+    color: rgb(248, 239, 239);
+}
+.nav-item li 
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 10px;
+    
+}
+.nav-item a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    color: rgba(245, 7, 118, 0.932) ;
+    
+}
+.nav-item a:hover
+{
+    background-color: black;
+    color: #fff;
+    box-shadow: 4px 4px 4px 4px;
+}
+.menu img
+{
+   height: 35px;  
+   margin-top: 25px; 
+   display: none; 
+}
+@media (max-width:920px)
+{
+    .nav-item 
+    {
+        display: none;
+       
+    }
+    .menu img
+    {
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+@media (max-width:520px)
+{
+  .logo  
+  {
+      font-size: 35px;
+      
+  }
+   
+}
+@media (max-width:420px)
+{
+    .logo{
+           font-size: 30px;
+           margin-left:10px;
+    }
+    
+    
+}
+@media (max-width:330px)
+{
+    .logo
+    {
+        font-size: 25px;
+    }
+}
+/*--------------carosal-------------*/
+
+.heading
+{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("https://cf.ltkcdn.net/fashion-history/images/orig/213611-1600x1066-women-in-fashion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 20s infinite;
+    
+}
+@keyframes slider
+{
+  0%{background-image: url('https://i.pinimg.com/originals/b7/43/53/b7435354a186180f22a5652b6bc64ca8.jpg');}
+  25%{background-image: url('https://wallpaperaccess.com/full/1448061.jpg');}
+  50%{background-image: url('https://cf.ltkcdn.net/fashion-history/images/orig/213611-1600x1066-women-in-fashion.jpg');}
+  75%{background-image: url('https://cutewallpaper.org/21/men-fashion-wallpapers/Best-Men-Fashion-Wallpaper-And-Photos-Latest-Man-And-Women-.jpg');}
+  100%{background-image: url('https://cdlshopping.com/wp-content/uploads/2019/04/Womens-Clothing.jpg');}
+}
+.head-text 
+{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(250, 11, 150);
+    margin:80px 35%;
+
+    
+}
+.head-text button{
+    width: 150px;
+    padding: 10px;
+    background-color:yellow;
+    box-shadow: 4px 4px 4px 4px;
+    border-color: aqua;
+}
+.head-text button:hover
+{
+   background-color: crimson;
+   border: 3px solid red;
+}
+@media (max-width:1250px)
+{
+    .head-text
+    {
+        font-size: 30px;
+    }
+}
+@media (max-width:1050px)
+{
+    .head-text
+    {
+        font-size: 25px;
+        margin-top: 90px;
+    }
+    .head-text button{
+        margin-top: 15px;
+
+
+    }
+}
+@media (max-width:880px)
+{
+    .head-text
+    {
+        font-size: 25px;
+        margin-right: 65px;
+    }
+    .head-text button{
+        margin-top: 15px;
+
+
+    } 
+}
+@media (max-width:720px)
+{
+    .head-text
+    {
+        font-size: 25px;
+        margin-right: 40px;
+        margin-top:120px;
+    }
+}
+@media (max-width:480px)
+{
+    .head-text
+    {
+        font-size: 15px;
+        margin-right:100px;
+        margin-top:95px;
+        
+    }
+    
+}
+@media (max-width:360px)
+{
+    .head-text
+    {
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+   .heading
+   {
+       height: 300px;
+   }
+}
+/*----------categries-----------*/
+.product-cateo
+{
+    width: 100%;
+    height: 400px;
+   
+}
+.product-cateo h2{
+    text-align: center;
+    font-size: 35px;
+}
+.product-cateo p{
+    text-align: center;
+    font-size: 15px;
+}
+.men-cateo
+{
+    display: flex;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.men-cateo::-webkit-scrollbar
+{
+    width: 0;
+}
+.men-cateo img
+{
+    width: 180px;
+    
+}
+.col-1
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(68, 65, 65);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-1 img{
+    height: 200px;
+}
+.col-1 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-2
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 img{
+    height: 200px;
+    
+}
+.col-2 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-3
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-3 img{
+    height: 200px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-4
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-4 img{
+    height: 200px;
+    
+}
+.col-4 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-5
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-5 img{
+    height: 200px;
+    
+}
+.col-5 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-6
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-6 img{
+    height: 200px;
+    
+}
+.col-6 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+
+/*---------------------products----------------*/
+
+.product-men
+{
+    width: 100%;
+    height: 400px;
+   
+}
+.product-men h2{
+    text-align: center;
+    font-size: 35px;
+}
+.product-men p{
+    text-align: center;
+    font-size: 15px;
+}
+.men-head
+{
+    display: flex;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.men-head::-webkit-scrollbar
+{
+    width: 0;
+}
+.men-head img
+{
+    width: 180px;
+    
+}
+.col-1
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(68, 65, 65);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-1 img{
+    height: 200px;
+}
+.col-1 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-1:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-1 img:hover
+{
+    border: 3px solid red;
+}
+.col-2
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 img{
+    height: 200px;
+    
+}
+.col-2 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-2:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-2 img:hover
+{
+    border: 3px solid red;
+}
+
+.col-3
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-3 img{
+    height: 200px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-3:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-3 img:hover
+{
+    border: 3px solid red;
+}
+.col-4
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-4 img{
+    height: 200px;
+    
+}
+.col-4 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-4:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-4 img:hover
+{
+    border: 3px solid red;
+}
+.col-5
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-5 img{
+    height: 200px;
+    
+}
+.col-5 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-5:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-5 img:hover
+{
+    border: 3px solid red;
+}
+.col-6
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-6 img{
+    height: 200px;
+    
+}
+.col-6 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-6:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-6 img:hover
+{
+    border: 3px solid red;
+}
+.col-7
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-7 img{
+    height: 200px;
+    
+}
+.col-7 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-7:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-7 img:hover
+{
+    border: 3px solid red;
+}
+.col-8
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-8 img{
+    height: 200px;
+    
+}
+.col-8 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-8:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-8 img:hover
+{
+    border: 3px solid red;
+}
+
+/*--------------------product(jeans)------------*/
+
+.product-jeans
+{
+    width: 100%;
+    height: 400px;
+   
+}
+.product-jeans h2{
+    text-align: center;
+    font-size: 35px;
+}
+.product-jeans p{
+    text-align: center;
+    font-size: 15px;
+}
+.men-head
+{
+    display: flex;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.men-head::-webkit-scrollbar
+{
+    width: 0;
+}
+.men-head img
+{
+    width: 180px;
+    
+}
+.col-1
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(68, 65, 65);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-1 img{
+    height: 200px;
+}
+.col-1 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-1:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-1 img:hover
+{
+    border: 3px solid red;
+}
+.col-2
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 img{
+    height: 200px;
+    
+}
+.col-2 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-2:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-2 img:hover
+{
+    border: 3px solid red;
+}
+.col-3
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-3 img{
+    height: 200px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-3:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-3 img:hover
+{
+    border: 3px solid red;
+}
+.col-4
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-4 img{
+    height: 200px;
+    
+}
+.col-4 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-4:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-4 img:hover
+{
+    border: 3px solid red;
+}
+.col-5
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-5 img{
+    height: 200px;
+    
+}
+.col-5 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-5:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-5img:hover
+{
+    border: 3px solid red;
+}
+.col-6
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-6 img{
+    height: 200px;
+    
+}
+.col-6 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-6:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-6 img:hover
+{
+    border: 3px solid red;
+}
+.col-7
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-7 img{
+    height: 200px;
+    
+}
+.col-7 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-7:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-7 img:hover
+{
+    border: 3px solid red;
+}
+.col-8
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-8 img{
+    height: 200px;
+    
+}
+.col-8 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-8:hover{
+    border: 5px solid rgb(12, 240, 12);
+}
+.col-8 img:hover
+{
+    border: 3px solid red;
+}
+
+
+/*-------------------product(shoes)-----------------*/
+
+.product-shoes
+{
+    width: 100%;
+    height: 400px;
+   
+}
+.product-shoes h2{
+    text-align: center;
+    font-size: 35px;
+}
+.product-shoes p{
+    text-align: center;
+    font-size: 15px;
+}
+.men-head
+{
+    display: flex;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.men-head::-webkit-scrollbar
+{
+    width: 0;
+}
+.men-head img
+{
+    width: 180px;
+    
+}
+.col-1
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(68, 65, 65);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-1 img{
+    height: 200px;
+}
+.col-1 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-2
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 img{
+    height: 200px;
+    
+}
+.col-2 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-3
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-3 img{
+    height: 200px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-4
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-4 img{
+    height: 200px;
+    
+}
+.col-4 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-5
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-5 img{
+    height: 200px;
+    
+}
+.col-5 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-6
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-6 img{
+    height: 200px;
+    
+}
+.col-6 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-7
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-7 img{
+    height: 200px;
+    
+}
+.col-7 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-8
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-8 img{
+    height: 200px;
+    
+}
+.col-8 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+
+/*----------------women wear---------------*/
+.product-women
+{
+    width: 100%;
+    height: 400px;
+   
+}
+.product-women h2{
+    text-align: center;
+    font-size: 35px;
+}
+.product-women p{
+    text-align: center;
+    font-size: 15px;
+}
+.men-head
+{
+    display: flex;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.men-head::-webkit-scrollbar
+{
+    width: 0;
+}
+.men-head img
+{
+    width: 180px;
+    
+}
+.col-1
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(68, 65, 65);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-1 img{
+    height: 200px;
+}
+.col-1 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-2
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 img{
+    height: 200px;
+    
+}
+.col-2 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-3
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-3 img{
+    height: 200px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-4
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-4 img{
+    height: 200px;
+    
+}
+.col-4 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-5
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-5 img{
+    height: 200px;
+    
+}
+.col-5 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-6
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-6 img{
+    height: 200px;
+    
+}
+.col-6 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-7
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-7 img{
+    height: 200px;
+    
+}
+.col-7 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+.col-8
+{
+    width: 200PX;
+    height: 300PX;
+    border: 2px solid rgb(78, 76, 76);
+    margin: 0px 10px;
+    color: rgb(10, 139, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-8 img{
+    height: 200px;
+    
+}
+.col-8 a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    padding: 2px;
+    border: 1px solid aqua;
+    background-color: red;
+    box-shadow: 2px 2px 2px 2px;
+    color: black;
+}
+
+/*--------------about us----------*/
+
+.about
+{
+    width: 100%;
+    height: 500px;
+}
+.about h2{
+    text-align: center;
+    font-size: 35px;
+}
+.about-head
+{
+    display: flex;
+    justify-content: space-around;
+}
+.about-img img{
+    width: 500px;
+    margin-left: 65px;
+    margin-top: 25px;
+    border-radius: 65px;
+}
+.about-text 
+{
+    margin-top: 25px;
+    padding: 15px;
+}
+.about-text h3{
+    text-align: center;
+    font-size: 35px;
+} 
+.about-text p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width:1120px)
+{
+    .about-text p
+    {
+        font-size: 20px;
+    }
+}
+@media (max-width:940px)
+{
+    .about-img img
+    {
+        width: 400px;
+    }
+    .about-text p
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width:740px)
+{
+    .about-head
+    {
+        display: block;
+        justify-content: space-evenly;
+    }
+    .about-img img
+    {
+        margin-left: 120px;
+    }
+}
+@media (max-width:540px)
+{
+    .about-img img
+    {
+        margin-left: 95px;
+        width: 300px;
+    }
+}
+@media (max-width:440px)
+{
+    .about-img img
+    {
+        margin-left: 35px;
+    }
+}
+@media (max-width:320px)
+{
+    .about-img img
+    {
+        margin-left: 14px;
+    }
+}
+
+/*-------------contact-us---------*/
+.contact
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(228, 238, 238);
+    background-image: url("https://media.istockphoto.com/photos/-picture-id1311934969?b=1&k=20&m=1311934969&s=170667a&w=0&h=UQ3F8CE5zam5mT5swIliZ9nO7dhX4ZzsALMufFdv6Ys=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.contact h2
+{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    
+
+}
+.contact-head
+{
+    margin-left: 41%;
+    margin-top: 40px;
+    
+}
+.contact-head input
+{
+    display: block;
+   margin: 10px;
+   padding: 10px;
+   width: 250px;
+   border: none;
+   
+}
+input[type=text],input[type=email],input[type=number]
+{
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 2px solid blue;
+    
+}
+input:hover
+{
+    background: turquoise;
+    color: black;
+}
+.contact-head button
+{
+    padding: 15px;
+    width: 120px;
+    margin-left: 65px;
+    background-color: chartreuse;
+    border: 2px solid orange;
+}
+button:hover
+{
+    background-color: orangered;
+    border-color: rgb(12, 240, 12);
+}
+@media (max-width:940px)
+{
+    .contact-head 
+    {
+        margin-left: 35%;
+    }
+}
+@media(max-width:740px)
+{
+    .contact
+    {
+        margin-top: 50px;
+    }
+}
+@media(max-width:600px)
+{
+    .contact-head{
+        margin-left:30%;
+    }
+}
+@media(max-width:520px)
+{
+    .contact-head
+    {
+        margin-left: 20%;
+    }
+}
+@media(max-width:400px)
+{
+    .contact
+    {
+        margin-top: 85px;
+    }
+     .contact-head
+    {
+        margin-left: 14%;
+    }
+   
+}
+@media(max-width:330px)
+{
+    .contact-head
+    {
+        margin-left: 10%;
+    }
+}
+/*------------------footer-----------*/
+.footer
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIWFRUVGBUVFxcVFRUVFRUVFxcYFxUVFRUYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0OFw8PFS0ZFRkrKy0tNy0tLS03LS0tKystLS0tLS0rKys3Nzc3Ny03LS03KzcrLSstNzctKysrKy0rLf/AABEIAHkBogMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAcF/8QAMBAAAgEBBwIGAgICAwEAAAAAAAECAxEhMUFxscFRgQQSIjJhkdHwobJCgmJywhP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APFZ5FE7hZZDtXIy20WGphb8rdCWDyw7rcKyHihIlaaIJtY6cDU1ctEGX79Gpe1aLYAtEqr7FJTEbQD+G9vd7jxE8M/T3e5WKBD01ic8l6n2OmKISXqf+vJItGYacb+pkh4SssKiE/csseB8haj9SfxLgYUgWXCWXrvsyiVxPNd/6sCkU+oyt+OAR/fsZoio1n6WPBG8R7WNDEon5RoozQyAhSwKonTwKIBQUsO73GBRw7y3CMFgaCkAqx7LkpYIsey3Y4UjQll677MsSzWr2YRVGAmPIipyw+tw5vuCpgwtWfyVGURcxkLIKnRVxQn4fAogQs3cRg7+74LyVxFLF258IRKZY2BkzPJgqXoonJ3/AL1CxY49uSjQRNMNTDugSQG90AbTBMBpZajWgeWv5GsCsg1Hd3W4EGeHdbgNFFICxMpckVqv79GpL0rRGqcBor0rRbBCNCtFZCyRQfDYd3uXgiPhY3d3udESVYJB++Wi5L2kZe6Wkf8A0SBg2GcSkIXFHNUXqjo+CnluFqx9UdJcDzdxAPLcRzjq/wCrLvDsQzjq9mWFVQVYFGsf6iBfEe13ZGiwV7fK/wADLPoUK0PEUeBBzU8P35KxEpK77KwKFsEpO7vLcoyNOO8t2EOOhUOmBJe56LdlEhbPU9Fux4AK0Tsvjq9mWmiTxjq9mBRIZoEQtEVOqrmGeL1YKruY08WVCrE0gW2Gk7gqdBFpIhQ/JdsUibwJ0uXsiskSp568IRKeaESKrAngBOCv7corJCQxenKHk7SiUpCTeGqCzS/G4QTGCAs8i2RKSw1LWhSxDUw+t0ZAlh9bkFEGwVBTCjM1F+laIExvDr0rRBGkK2OCYB8KsdXuWZLwuer3LWEVoojL3vRclYonZ63ouQLMDCneZsohUxj34KSwJ1MY9+C2RKQpFq9av+rLLqQbw1ezLBQ3m+QoW15BArv0vQcnXT8r0LpYgJYNEAYkVClh97srAnS/O7KQZRkiVF7vcqydOO73CGm7AxDYBBSyxei3Y1MWXu7cjwCNInPGOvDK1Cbxjq9mBSIPMMkCSCpVsGVkr2Tre16MeavfcIWy68WSbtCwyAj4dWIq0ydEumKRPIlBY68IvPAjCy/XhCFNEZxtEQ6/AEZq/VcoaywLfq7Pg0gJNCzV31uOxJ4fRUrGDaYAN4aoqRnlqiwVkGftfbcCNU9v1uQUSxERRZiIDSGoe1aIA3h1ctEA0hZIdoWQU/hVc9WOxPD4PVlGQaBN+96LdlYEp+56LdgUj1C0GKuC8Cjmq4x7l7LiNdXx1ZaLtJSFJZrV7MsQWMdeGIVTy2/Av/z+SjiK5tFE61P0vR7FPMTqybjLR7HRBhCgCkZoioUs9ZbsrEjRz1luyyKALTW7HsEp8sB0KiggCv3duSqwJv3dnuh0yBZInbel8vZl0QmvUtXsyoqDzWhtRlYFLX9r0Y8sxKvtejGkwBaaaCkaTIIUVzuyquJUPzuyzRaQk8CUc9Vsi0lcSWL1WwhT2BCkawCL9y0fAZGa9S0fBpIIRi1Hd9DMSph9FK1phTBGnlqiqJTy1RaIIwantf7mC01T2siqJgMsTW3BW6D+HwWgg/hsFoKHkLYGRmwDQz1fAzFoZ/8AZ7IcgMGSm/U9FuysRJr1dluwVSEsylv2SHsuKI11fHvsPFiV/wDHvsNElIDJLGOvDLTI5rXhlHSgSQYoWoyBK8F5JaMeIld+iWjHiAQSCLLkCFDF6y3ZYl4ZXv8A23ZawUjONxOlyyzwI0+XwBSQg8kCKAR+7s9yiVxNr1duUVQCAniteGEEnhrwyhrAJjJiMgWq7noyrxJVlc9GUsvKCwTGcRajsIOej+d2WIUXu92V8xaRmycLLXqtgzjmTjn22CVczQto0XkRUp4rvwGQJ+5aPgMlcVE2xaquC0CeBQhjNmCNLlFScuVuVAMELVwYyBW9r0Ip44sDDDFgkFMP4fBaCDeHdyAaQrGFYDUc9eEUtJUc9eEURA0RZ+/tywoH+fbkB0h2LIaKKIeJy77DwJ18u+zKQJQJEs1qdDOd+5agdCQJMIJATr+2Wj2HgLW9r0ew8QM0BjNAlgBz+Gxer3ZeZDw+L1luytQUZO4Sk7+/4NF3ApcvgoqzRMFEEZP1dnuiywIv3dnuiqAVit3rX8j2E54rXhlRS2wERYodelXhU62D0ZW28jWdz0ew8o36hFSVVlGTmiK56XL3ZUShy92VaLSM1cc08X22Z1t3EItWyt/48iFTi/j6KJjeZLAnZ+2hAn7kvhlGI4u37GbAlIE8BpiVMCgNACzBAk+NysZHMxwav5hakrnoTaNJXMGuiLVoW/kgjMYuuhyXU1BqxfubOc1PD96sYa67V1QjkRFGGuqjJeq/PhFW11X2cNPPXhFCYa6lJdQOS8+WHX5OUy93bkYa+h5l1X2gxmuq+zhMhhqviZq2N/XZjQkupx1cV+5BQw12qa6kfMrVfmiVpPNaoYa7/Ouv8m866nIBoYa6qsl5XesGUjJdV9nBLB6DxGGu1yXVfYspLqjlFGGq0GrXf13KVJ34nFD8jMYa6bV1QKclffm9kc5ord7IYa7HJdUNCS6/ycTDEYas2vMr8nuiqa6/ycOfZ8DsYa6fMuq+ydSSTV+ZEm+S4muqNTo9hovNu34tOVMww1arK1O/J7HQ5K3H+ThmrnoOQ11uS6r+BKjTWJzMzGLpqL+c3uyzkupxQ5e44w11ykrMUc2cv9eRWJm+3IkLVu6C2iCQSpppT+eo9vyQa5CkDTyfyJNqwRgmDTswhijMewRlAgsE1c+4zFeD7kUQBFALDTw/erA8A08PvdgMLaGYgDQd7/ciglPF/uRRAA3+XbkwHj25AoZgzMwJ1MtXswoFXFa8MZAYR5aocWWWqAdGkZGYAlgwxDPPQEAGFCxQJxz77jMVfv2OwAGOevCMCnnrwgMMgIIQlt/Z8Dk81o+CgUJC2YajAlyEZDJCxKBSVMHoMJUz0fIyAzMwyFkAkMHqxhIYd2OgMJZe+3Iwub7cgFIzNIzCA8u4QS/fowCMEwgqFBsAEwH/2Q==);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: #fff;
+}
+.footer-head
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 25px;
+}
+.icon{
+    margin-left: 42%;
+    margin-top: 15px;
+}
+.icon img
+{
+    width: 30px;
+    margin: 5px;
+}
+@media(max-width:1260px)
+{
+    .icon{
+        margin-left: 40%;
+    }
+}
+@media(max-width:960px)
+{
+    .icon{
+        margin-left: 37%;
+    }
+}
+@media(max-width:640px)
+{
+    .footer-head{
+        display: block;
+        text-align: center;
+    }
+    .foot-2
+    {
+        margin-top: 15px;
+    }
+    .foot-3
+    {
+        margin-top: 25px;
+    }
+}
